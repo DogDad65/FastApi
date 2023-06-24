@@ -1,0 +1,1 @@
+SELECT posts.*, COUNT(votes.post_id) as votes from posts LEFT JOIN votes on posts.id = votes.post_id group by posts.id;
